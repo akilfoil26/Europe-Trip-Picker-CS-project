@@ -1,0 +1,44 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(195, 224, 253);
+}
+
+
+button{
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+  
+}
+
+header{
+  background: pink;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 50px;
+  font-family: cursive;}
+
+select{
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+}
+
+input{
+  padding: 10px;
+  font-family: monospace;
+}
+
+
+
+.slider{
+  width: 50%; 
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */ 
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+

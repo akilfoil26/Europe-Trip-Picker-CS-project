@@ -1,24 +1,18 @@
 function getQuote (){
-    var boxColor = document.getElementById("color").value;
-    var font= document.getElementById("fontFamily").value;
-    var text = document.getElementById("quote").value;
-    var size= document.getElementById("size").value;
+    var landscapes = document.getElementById("landscapeFamily").value;
+    var attractions= document.getElementById("attractionFamily").value;
     var feedback = document.getElementById("feedback").value;
    
 
-    console.log(boxColor);
-    console.log(font);
-    console.log(text);
-    console.log(size);
+    console.log(landscapes);
+    console.log(attractions);
     console.log(feedback);
 
     //putting what i write into the output box into the "quote" box
-    document.getElementById("output").innerHTML=text;
+    document.getElementById("output").innerHTML=landscapes;
     //taking what i write into the output box and setting it equal to what the font is
-    document.getElementById("output").style.fontFamily=font;
-    //setting what I choose as my boc color to change the outputBox color not just the output which is the text
-    document.getElementById("outputBox").style.backgroundColor=boxColor;
-    document.getElementById("outputBox").style.fontSize=size+ "px";
+    document.getElementById("output").style.fontFamily=attractions;
+
     
     if (boxColor=="lavender" && font=="Brush Script MT" ){
        feedback="Great combo!"
@@ -34,3 +28,12 @@ function getQuote (){
 
     document.getElementById("feedback").innerHTML=feedback
 }
+function showTemp(){
+    var size= document.getElementById("size").value;
+    document.getElementById("feedback").innerHTML= size +" °F"
+}
+
+showTemp();
+
+
+

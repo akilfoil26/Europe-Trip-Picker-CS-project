@@ -17,14 +17,7 @@
 
 		<input oninput="getQuote()" type="text" id="quote"><br><br>
 
-  <select onchange="getQuote()" id="Foods" >
-    <option value="Foods">Foods</option>
-    <option value="Baked Goods">Baked Goods</option>
-    <option value="Chocolate">Chocolate</option>
-    <option value="Seafood">Seafood</option>
-    <option value="Meat">Meat</option>
-    <option value="Carbohydrates">Carbohydrates</option>
-    <option value="Drinks">Drinks</option>
+ 
    
 
     
@@ -34,14 +27,9 @@
 
 <!--change getQuote-->
   <select onchange="getQuote()" id="landscapeFamily" >
-    <option value="Landscapes">Landscapes</option>
-    <option value="Mountains">Mountains</option>
-    <option value="Islands">Islands</option>
-    <option value="Flat">Flat</option>
+    <option value="Landscape">Landscape</option>
+     <option value="Land">Land</option>
     <option value="Water">Water</option>
-    <option value="Forests">Forests</option>
-    <option value="Coastline">Coastline</option>
-    <option value="Countryside">Countryside</option>
     
 
  
@@ -51,11 +39,9 @@
   <select onchange="getQuote()"  id="attractionfamily" >
     <option value="Attractions">Attractions</option>
 <option value="Architecture">Architecture</option>
-<option value="Parks">Parks</option>
 <option value="Historical Landmarks">Historical Landmarks</option>
-<option value="Markets">Markets</option>
-<option value="Cathedrals">Cathedrals</option>
-<option value="Museums">Museums</option>
+<option value="Nature featuers">Nature features</option>
+
 
   </select>
 
@@ -70,7 +56,7 @@
 <br>
 <br>
 
-Temperature
+Average temperature in Fahrenheit
 
 
 
@@ -78,13 +64,13 @@ Temperature
 <br>
   
 
-  <input oninput="getQuote()" type="range" min="10" max="60" value="25" class="slider" id="size">
+  <input oninput="showTemp()" type="range" min="0" max="65" value="25" class="slider" id="size">
 
   <p id="feedback"> </p>
     </center>
  
     <script src="script.js"></script>
   
- 
+ <p id= "temperature"></p>
   </body>
 </html>
